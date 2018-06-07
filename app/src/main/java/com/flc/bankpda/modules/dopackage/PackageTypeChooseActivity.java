@@ -16,26 +16,6 @@ public class PackageTypeChooseActivity extends BaseMvpActivity {
     private ImageView iv_package2;
     private ImageView iv_package1;
 
-    private BroadcastReceiver mScanReceiver = new BroadcastReceiver() {
-
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            // TODO Auto-generated method stub
-
-            byte[] barocode = intent.getByteArrayExtra("barocode");
-            int barocodelen = intent.getIntExtra("length", 0);
-            byte temp = intent.getByteExtra("barcodeType", (byte) 0);
-            android.util.Log.i("debug", "----codetype--" + temp);
-//            barcodeStr = new String(barocode, 0, barocodelen);
-//            showScanResult.append("�㲥�����");
-//            showScanResult.append(barcodeStr);
-//            showScanResult.append("\n");
-//            //       showScanResult.setText(barcodeStr);
-//            sm.stopScan();
-        }
-
-    };
-
     @Override
     protected int getLayoutId() {
         return R.layout.activity_package_type_choose;
