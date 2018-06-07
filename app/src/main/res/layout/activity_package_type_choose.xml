@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".modules.dopackage.PackageTypeChooseActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_banner" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y60"
+            android:text="2018年4月20号"
+            android:textColor="#fff"
+            android:textSize="@dimen/x14" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_date"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y10"
+            android:text="樊启龙"
+            android:textColor="#fff"
+            android:textSize="@dimen/x14" />
+
+        <TextView
+            android:id="@+id/tv_bank_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y68"
+            android:text="南京银行南京分行"
+            android:textColor="#fff"
+            android:textSize="@dimen/x20" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y90"
+        android:text="请选择装包类型"
+        android:textColor="#153469"
+        android:textSize="@dimen/x20" />
+
+    <RelativeLayout
+        android:id="@+id/rl_package1"
+        android:layout_width="@dimen/x180"
+        android:layout_height="@dimen/y50"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y30"
+        android:background="@drawable/shape_home_btn">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="一代包"
+            android:textSize="@dimen/x20"
+            android:textColor="#153469" />
+
+        <ImageView
+            android:id="@+id/iv_package1"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/check_ic" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_package2"
+        android:layout_width="@dimen/x180"
+        android:layout_height="@dimen/y50"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y30"
+        android:background="@drawable/shape_home_btn">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="二代包"
+            android:textSize="@dimen/x20"
+            android:textColor="#153469" />
+
+        <ImageView
+            android:id="@+id/iv_package2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/check_ic" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_marginTop="@dimen/y90"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shape_confirm_btn"
+        android:layout_width="@dimen/x180"
+        android:layout_height="@dimen/y50"
+        android:textSize="@dimen/x24"
+        android:text="确定"
+        android:gravity="center"
+        android:textColor="#fff"
+        />
+
+</LinearLayout>

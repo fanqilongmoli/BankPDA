@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical"
+    tools:context=".modules.login.LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/y90"
+        android:src="@drawable/login_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y60"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/y90"
+        android:background="@drawable/shape_login_input_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:src="@drawable/account_icon" />
+
+        <View
+            android:layout_width="@dimen/x2"
+            android:layout_height="@dimen/y40"
+            android:layout_marginLeft="@dimen/x20"
+            android:background="#e6e6e6" />
+
+        <EditText
+            android:id="@+id/et_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:paddingLeft="@dimen/x20"
+            android:hint="请输入账号"
+            android:textColor="#999"
+            android:textSize="@dimen/x20"
+            android:paddingRight="@dimen/x20" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y60"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@drawable/shape_login_input_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:src="@drawable/password_icon" />
+
+        <View
+            android:layout_width="@dimen/x2"
+            android:layout_height="@dimen/y40"
+            android:layout_marginLeft="@dimen/x20"
+            android:background="#e6e6e6" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:paddingLeft="@dimen/x20"
+            android:hint="请输入密码"
+            android:textColor="#999"
+            android:textSize="@dimen/x20"
+            android:paddingRight="@dimen/x20" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/y60"
+        android:layout_width="match_parent"
+        android:textColor="#fff"
+        android:text="登  录"
+        android:textSize="@dimen/x22"
+        android:gravity="center"
+        android:background="@drawable/shape_login_btn"
+        android:layout_height="@dimen/y60" />
+
+    <CheckBox
+        android:theme="@style/MyCheckBox"
+        android:layout_marginTop="@dimen/y10"
+        android:paddingRight="@dimen/x30"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="@dimen/x18"
+        android:text="记住用户名"/>
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y50"
+        android:textColor="#fff"
+        android:textSize="@dimen/x22"
+        android:text="切换至扫码登录"/>
+</LinearLayout>
