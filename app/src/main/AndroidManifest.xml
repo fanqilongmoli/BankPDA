@@ -19,7 +19,8 @@
         </activity>
         <activity android:name=".modules.home.HomeActivity" />
         <activity android:name=".modules.dopackage.PackageTypeChooseActivity" />
-        <activity android:name=".modules.dopackage.PackageActivity"></activity>
+        <activity android:name=".modules.dopackage.PackageActivity"
+            android:windowSoftInputMode="adjustPan"/>
     </application>
 
 </manifest>
