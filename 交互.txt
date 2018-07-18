@@ -1,0 +1,13 @@
+
+结束的标志符号     #end#
+
+{
+    url:"",
+    token:"",
+    code:"",
+    method:"",
+    body:byte[],
+}
+
+
+url\n response
